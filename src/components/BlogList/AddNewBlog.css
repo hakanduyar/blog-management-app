@@ -1,17 +1,67 @@
 .add-new-blog {
-  z-index: 1050; /* Yüksek bir değer verin */
   position: relative;
+  margin-bottom: 20px;
 }
 
 .add-new-blog-icon {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1060; /* İkonun ön planda olmasını sağlar */
-  font-size: 24px;
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
   cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.add-new-blog-icon:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.add-blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-blog-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-blog-form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-blog-form .form-group input,
+.add-blog-form .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-blog-form .form-group textarea {
+  resize: vertical;
+}
+
+.add-blog-form .btn {
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 16px;
 }

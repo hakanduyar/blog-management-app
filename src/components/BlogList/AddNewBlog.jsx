@@ -4,6 +4,7 @@ import "./AddNewBlog.css";
 
 const AddNewBlog = ({ addBlog }) => {
   const [formVisible, setFormVisible] = useState(false);
+
   const [formData, setFormData] = useState({
     title: "",
     content: "",
@@ -11,15 +12,22 @@ const AddNewBlog = ({ addBlog }) => {
     date: "",
   });
 
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(formData).some((field) => !field.trim()))
-      return alert("Tüm alanlar doldurulmalıdır.");
     addBlog(formData);
-    setFormData({ title: "", content: "", author: "", date: "" });
+    setFormData({
+      title: "",
+      content: "",
+      author: "",
+      date: "",
+    });
     setFormVisible(false);
   };
 
@@ -32,7 +40,7 @@ const AddNewBlog = ({ addBlog }) => {
         <i className="fas fa-plus"></i>
       </div>
       {formVisible && (
-        <form onSubmit={handleSubmit}>
+        <form className="add-blog-form" onSubmit={handleSubmit}>
           {["title", "content", "author", "date"].map((field, index) => (
             <div className="form-group" key={index}>
               <label htmlFor={field}>
