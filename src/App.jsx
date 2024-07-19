@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BlogList from "./components/BlogList/BlogList.jsx";
-import AddNewBlog from "./components/BlogList/AddNewBlog.jsx"; // Doğru içe aktarma
+import AddNewBlog from "./components/BlogList/AddNewBlog.jsx";
 import { blogData } from "./data/blogData.js";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         ...newBlog,
         id: blogs.length + 1,
         comments: [],
-        imageUrl: "https://via.placeholder.com/150",
+        imageUrl: "https://picsum.photos/200/300?random=1",
       },
     ]);
   };

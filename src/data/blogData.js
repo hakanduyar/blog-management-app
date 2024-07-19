@@ -19,7 +19,7 @@ export const blogData = [
         date: "2024-07-18",
       },
     ],
-    imageUrl: "https://picsum.photos/400/210",
+    imageUrl: "https://picsum.photos/400/210?random=6",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const blogData = [
         date: "2024-07-19",
       },
     ],
-    imageUrl: "https://picsum.photos/400/210",
+    imageUrl: "https://picsum.photos/400/210?random=5",
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ export const blogData = [
         date: "2024-07-22",
       },
     ],
-    imageUrl: "https://picsum.photos/400/210",
+    imageUrl: "https://picsum.photos/400/210?random=4",
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ export const blogData = [
         date: "2024-07-23",
       },
     ],
-    imageUrl: "https://picsum.photos/400/210",
+    imageUrl: "https://picsum.photos/400/210?random=3",
   },
   {
     id: 5,
@@ -86,7 +86,7 @@ export const blogData = [
     author: "Elif Arslan",
     date: "2024-07-24",
     comments: [],
-    imageUrl: "https://picsum.photos/400/210",
+    imageUrl: "https://picsum.photos/400/210?random=2",
   },
 ];
 
