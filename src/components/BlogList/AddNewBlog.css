@@ -1,0 +1,17 @@
+.add-new-blog {
+  z-index: 1050; /* Yüksek bir değer verin */
+  position: relative;
+}
+
+.add-new-blog-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1060; /* İkonun ön planda olmasını sağlar */
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}

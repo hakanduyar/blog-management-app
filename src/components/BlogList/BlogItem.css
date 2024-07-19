@@ -1,0 +1,40 @@
+.blog-item .card-body {
+  font-family: "Arial", sans-serif;
+}
+
+.blog-item .header h4 {
+  font-weight: bold;
+  color: #333;
+}
+
+.blog-item .body .title h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.blog-item .body .content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.blog-item .alt .date h4,
+.blog-item .alt .comments-amount h4 {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.blog-item .actions button {
+  font-size: 1rem;
+  color: #007bff;
+  border: none;
+  background: none;
+}
+
+.blog-item .actions button.delete {
+  color: red;
+}
+
+.blog-item .actions button.update {
+  color: green;
+}
